@@ -1,0 +1,96 @@
+.sidebar {
+    flex: 1;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 100vh;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .top {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: .5px solid rgb(240, 238, 238);
+        
+        .logo {
+            color: #38b000;
+            font-size: 20px;
+        }
+    }
+
+    .center {
+        padding-left: 10px;
+
+        ul {
+
+            .title_Link {
+                font-size: 13px;
+                font-weight: 700;
+                color: #999;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 5px;
+                
+                &:hover {
+                    background-color: #38b0002a;
+                }
+                
+                .icon {
+                    font-size: 22px;
+                    color: #38b000;
+                }
+
+                span {
+                    font-size: 16px;
+                    margin-left: 10px;
+                    color: #777;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding-left: 10px;
+        margin-top: 15px;
+        
+        .title_Link {
+            color: #999;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .mode {
+            display: flex;
+            align-items: center;
+            
+            .color_Mode {
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 1px solid #38b000;
+                margin: 5px 5px;
+
+                &:nth-child(1) {
+                    background-color: white;
+                }
+                &:nth-child(2) {
+                    background-color: #222;
+                }
+            }
+        }
+
+    }
+}

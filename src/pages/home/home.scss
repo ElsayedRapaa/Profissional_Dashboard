@@ -1,0 +1,24 @@
+.home {
+    display: flex;
+
+    .home_Container {
+        flex: 6;
+
+        .wedgets {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .chart_Container {
+            display: flex;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        .table_Container {
+            padding: 20px;
+        }
+    }
+}

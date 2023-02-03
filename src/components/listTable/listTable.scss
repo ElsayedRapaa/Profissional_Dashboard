@@ -1,0 +1,55 @@
+.list_Table {
+    -webkit-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+    -moz-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+    box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+    padding: 10px;
+
+    .title {
+        color: gray;
+        font-weight: 500;
+    }
+
+    .table_Header {
+        font-weight: 700;
+        color: gray;
+    }
+
+    .table_Item {
+        font-weight: 600;
+        color: gray;
+
+        .table_Product {
+            display: flex;
+            align-items: center;
+
+            .img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+
+            .table_Product_Text{
+                font-weight: 600;
+            }
+        }
+
+        .table_Status {
+            padding: 5px;
+            border-radius: 5px;
+            
+            &.Approved {
+                color: green;
+                background-color: rgba(0, 128, 0, 0.2);
+                font-weight: 600;
+            }
+            
+            &.Pending {
+                color: goldenrod;
+                background-color: rgba(218, 165, 32, 0.2);
+                font-weight: 600;
+            }
+        }
+    }
+}

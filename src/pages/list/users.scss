@@ -1,0 +1,11 @@
+.users {
+    display: flex;
+
+    .siebar {
+        flex: 1;
+    }
+
+    .users_Container {
+        flex: 6;
+    }
+}

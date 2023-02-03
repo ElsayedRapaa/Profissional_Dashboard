@@ -1,0 +1,68 @@
+.users_List {
+    width: 100%;
+    height: 580px;
+    padding: 20px;
+
+    .usersList_Title {
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        -webkit-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        -moz-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+
+        .title {
+            color: lightgray;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+
+    .data_Grid {
+        -webkit-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        -moz-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+    }
+
+    .cell_With_Img {
+        display: flex;
+        align-items: center;
+
+        .cell_Img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: 'cover';
+            margin-right: 20px;
+        }
+    }
+
+    .cell_With_Status {
+        padding: 2px 5px;
+        border-radius: 5px;
+
+        &.active {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.2);
+        }
+
+        &.pending {
+            color: goldenrod;
+            background-color: rgba(218, 165, 32, 0.2);
+        }
+
+        &.passive {
+            color: crimson;
+            background-color: rgba(220, 20, 60, 0.2);
+        }
+    }
+
+    .cell_With_Actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

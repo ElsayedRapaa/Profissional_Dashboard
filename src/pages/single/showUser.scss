@@ -1,0 +1,102 @@
+.show_User {
+    display: flex;
+    
+    .sidebar {
+        flex: 1;
+    }
+
+    .showUser_Container {
+        flex: 6;
+
+        .title {
+            color: rgba(128, 128, 128, 0.452);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .top {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+
+            .left {
+                flex: 1;
+                padding: 10px;
+                border-radius: 10px;
+                -webkit-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+                -moz-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+                box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+                position: relative;
+
+                .edit {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 3px 8px;
+                    border-radius: 0 0 0 5px;
+                    color: green;
+                    background-color: rgba(0, 128, 0, 0.3);
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+
+                .items {
+                    padding: 10px;
+                    display: flex;
+                    gap: 15px;
+
+                    .left_Item {
+                        .item_Img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .right_Item {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .name {
+                            font-size: 25px;
+                            font-weight: bold;
+                            color: #555;
+                        }
+
+                        .item {
+                            color: gray;
+                            font-size: 14px;
+                            
+                            .item_Key {
+                                font-weight: bold;
+                                margin-right: 5px;
+                            }
+
+                            .item_Value {
+                                font-weight: 300;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .right {
+                flex: 2;
+                border-radius: 10px;
+            }
+        }
+        
+        .bottom {
+            padding: 10px;
+            margin: 0 20px 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+            -moz-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+            box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.app.dark {
+    background-color: #222;
+    color: rgb(156, 156, 156);
+
+    .navbar {
+        border-color: #333;
+        background-color: #222;
+        color: #999;
+
+        .search_Box {
+            border-color: #333;
+
+            input {
+                color: white;
+
+                &::placeholder {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        background-color: #222;
+
+        .top {
+            border-color: #333;
+
+            .logo {
+                color: #999;
+            }
+        }
+
+        .center {
+            ul {
+                li {
+                    &:hover {
+                        background-color: #333;
+                    }
+
+                    .icon {
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    .featured {
+        .top {
+            .vert_Icon {
+                color: gray;
+            }
+        }
+    }
+
+    .chart {
+        .chart_Grid {
+            stroke: rgba(228, 228, 228, 0.219);
+        }
+    }
+
+    .list_Table {
+        background-color: #222;
+        -webkit-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        -moz-box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        box-shadow: 0px 6px 19px -3px rgba(184,184,184,.5);
+        
+        .table_Header, .table_Item {
+            border-color: gray;
+        }
+    }
+
+    .users_List {
+        .data_Grid {
+            color: gray;
+            border-color: gray;
+        }
+    }
+
+    .new_User {
+        form {
+            .form_Input {
+                .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+                    color: white;
+
+                    .css-l4u8b9-MuiInputBase-root-MuiInput-root:before {
+                        border-bottom: 1px solid gray;
+                    }
+                }
+
+                .label {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .showUser_Container {
+        .top {
+            .left {
+                .right_Item {
+                    .name {
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+}
